@@ -177,7 +177,7 @@ plot(g_dendroNetwork, edge.arrow.size=.5, vertex.color="deepskyblue", vertex.sha
 
 ## Workflow idea behind package use
 
-``` {r, workflow, echo=FALSE }
+```{r, workflow, echo=FALSE }
 DiagrammeR::grViz("
 digraph {
   # graph attributes
@@ -252,8 +252,7 @@ digraph {
 
 ## Package: Manual pages source
 
-![](images/function_wuchswerte.png)
-## Package: Manual pages (online)
+![](images/function_wuchswerte.png) \## Package: Manual pages (online)
 
 ![](images/function_wuchswerte_manual.png)
 
@@ -267,11 +266,11 @@ digraph {
 
 ## Package: Creating tests
 
-- check input
-- check results
-- check functions
+-   check input
+-   check results
+-   check functions
 
-### testthat package! 
+### testthat package!
 
 ## Package: Continous integration
 
@@ -279,26 +278,26 @@ digraph {
 
 https://devguide.ropensci.org/pkg_ci.html
 
--  usethis package!
--  Github Actions
+-   usethis package!
+-   Github Actions
 
 ## Package: Review
 
-- Github issue: https://github.com/ropensci/software-review/
-- Developers test your package
-- Feedback
-- Improvement of code
-- Improvement of documentation
-- Open peer review
+-   Github issue: https://github.com/ropensci/software-review/
+-   Developers test your package
+-   Feedback
+-   Improvement of code
+-   Improvement of documentation
+-   Open peer review
 
 ## Package: Dissemination
 
-- Source: https://github.com/ropensci/dendroNetwork/
-- Documentation: https://docs.ropensci.org/dendroNetwork/
-- CRAN: https://cran.r-project.org/package=dendroNetwork
-- Blog: https://ropensci.org/blog/2024/06/06/from-scripts-to-package/
-- Social media: Mastodon, LinkedIn, Facebook..
-- Write paper (still to publish)
+-   Source: https://github.com/ropensci/dendroNetwork/
+-   Documentation: https://docs.ropensci.org/dendroNetwork/
+-   CRAN: https://cran.r-project.org/package=dendroNetwork
+-   Blog: https://ropensci.org/blog/2024/06/06/from-scripts-to-package/
+-   Social media: Mastodon, LinkedIn, Facebook..
+-   Write paper (still to publish)
 
 ## Conclusions + recommendations
 
@@ -313,7 +312,6 @@ https://devguide.ropensci.org/pkg_ci.html
 ## References
 
 ::: {style="font-size: 70%;"}
-
 Visser, RM. 2021a Dendrochronological Provenance Patterns. Network Analysis of Tree-Ring Material Reveals Spatial and Economic Relations of Roman Timber in the Continental North-Western Provinces. Journal of Computer Applications in Archaeology 4(1): 230--253. DOI: https://doi.org/10.5334/jcaa.79.
 
 Visser, RM. 2021b On the similarity of tree-ring patterns: Assessing the influence of semi-synchronous growth changes on the Gleichläufigkeitskoeffizient for big tree-ring data sets. Archaeometry 63(1): 204--215. DOI: https://doi.org/10.1111/arcm.12600.
@@ -325,6 +323,4 @@ Visser, RM. forthcoming (2025). Relating Roman Rings. An interdisciplinary study
 Visser, RM and Vorst, Y. 2022 Connecting Ships: Using Dendrochronological Network Analysis to Determine the Wood Provenance of Roman-Period River Barges Found in the Lower Rhine Region and Visualise Wood Use Patterns. International Journal of Wood Culture 3(1--3): 123--151. DOI: https://doi.org/10.1163/27723194-bja10014.
 
 rOpenSci in general
-
 :::
-
