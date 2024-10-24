@@ -14,9 +14,6 @@ title-slide-attributes:
   data-background-position: 2% 2%
 ---
 
-## 
-
-![](images/CAA_2025_Athens_CfP_S5.jpg)
 
 ## Content
 
@@ -330,3 +327,8 @@ rOpenSci in general
 
 Source of these slides: https://github.com/RonaldVisser/dendroNetwork_presentation_JCM_CAA
 :::
+
+
+## 
+
+![](images/CAA_2025_Athens_CfP_S5.jpg)
