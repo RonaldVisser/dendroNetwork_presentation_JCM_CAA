@@ -108,7 +108,7 @@ Provenance of wood based on comparison tree-ring curves with calenders
     -   SGC (% (Improved statistic, formerly Gleichläufigkeit: ≥ 70%)
     -   Probability of exceedence (p, \<= 0.0001)
 
-![](images/network_example.png)
+![](images/Network_example.png)
 
 ## Provenance in network
 
