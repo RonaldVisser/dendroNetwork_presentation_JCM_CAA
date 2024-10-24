@@ -319,6 +319,11 @@
       margin-right: 0; 
     }
   </style>
+  <link href="dendroNetwork_presentation_JCM_CAA_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+  <script src="dendroNetwork_presentation_JCM_CAA_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="dendroNetwork_presentation_JCM_CAA_files/libs/viz-1.8.2/viz.js"></script>
+  <link href="dendroNetwork_presentation_JCM_CAA_files/libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+  <script src="dendroNetwork_presentation_JCM_CAA_files/libs/grViz-binding-1.0.11/grViz.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -441,6 +446,71 @@
 <img data-src="images/network_example.png" class="r-stretch"></section>
 <section id="provenance-in-network" class="slide level2">
 <h2>Provenance in network</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Closer in network = similar growth conditions</li>
+<li>Communities share growth conditions</li>
+<li>Assess spatial distances</li>
+<li>Contexts</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/network_4_means_GN_legend_provenance.png"></p>
+</div>
+</div>
+</section>
+<section id="open-science-in-research" class="slide level2">
+<h2>Open Science in research</h2>
+<h3 id="publication-open-access">Publication: Open Access</h3>
+<div style="font-size: 70%;">
+<ul>
+<li>Visser, RM. 2021 Dendrochronological Provenance Patterns. Network Analysis of Tree-Ring Material Reveals Spatial and Economic Relations of Roman Timber in the Continental North-Western Provinces. Journal of Computer Applications in Archaeology 4(1): 230–253. DOI: https://doi.org/10.5334/jcaa.79.</li>
+<li>Visser, RM and Vorst, Y. 2022b Connecting Ships: Using Dendrochronological Network Analysis to Determine the Wood Provenance of Roman-Period River Barges Found in the Lower Rhine Region and Visualise Wood Use Patterns. International Journal of Wood Culture 3(1–3): 123–151. DOI: https://doi.org/10.1163/27723194-bja10014.</li>
+</ul>
+</div>
+<h3 id="scripts-and-data-open">Scripts and data: Open</h3>
+<div style="font-size: 70%;">
+<ul>
+<li>Visser, RM. 2022 Dendrochronological Provenance Patterns. Code and Data of Network Analysis of Tree-Ring Material. DOI: https://doi.org/10.5281/zenodo.10200361.</li>
+<li>Visser, RM and Vorst, Y. 2022a Analyses, data and figures related to: ‘Connecting ships: using dendrochronological network analysis to determine the wood provenance of Roman-period river barges found in the Lower Rhine region and to visualise patterns of wood use’. DOI: https://doi.org/10.5281/zenodo.7243539.</li>
+</ul>
+</div>
+<h3 id="everything-open-and-accessible">Everything open and accessible</h3>
+</section>
+<section id="open-science-and-reproducibility" class="slide level2">
+<h2>Open Science and reproducibility</h2>
+<ul>
+<li>Scripts available</li>
+<li>Comments available</li>
+<li>Hard to use for others</li>
+</ul>
+<h3 id="package-enables-reuse-of-method-for-other-purposes">Package enables reuse of method for other purposes</h3>
+</section>
+<section id="package-do-we-need-another" class="slide level2">
+<h2>Package: do we need another?</h2>
+
+<img data-src="dendroNetwork_presentation_JCM_CAA_files/figure-revealjs/packages-network-1.png" width="960" class="r-stretch"></section>
+<section id="package-do-we-need-another-1" class="slide level2">
+<h2>Package: do we need another?</h2>
+
+<img data-src="dendroNetwork_presentation_JCM_CAA_files/figure-revealjs/dendroNetwork-packages-1.png" width="960" class="r-stretch"></section>
+<section id="workflow-idea-behind-package-use" class="slide level2">
+<h2>Workflow idea behind package use</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="grViz html-widget html-fill-item" id="htmlwidget-14630ba10dd12dab5d88" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-14630ba10dd12dab5d88">{"x":{"diagram":"\ndigraph {\n  # graph attributes\n  graph [overlap = true]\n  # node attributes\n  node [shape = box,\n        fontname = Helvetica,\n        color = gray]\n  # edge attributes\n  edge [color = black]\n  # node statements\n  1 [label = \"Load data\"]\n  2 [label = \"Create similarity table\"]\n  3 [label = \"Create network using default settings\"]\n  4 [label = \"Detect communities using the \n Girvan-Newman algorithm\"]\n  5 [label = \"Detect communities using the \n Clique Percolation Method\"]\n  6 [label = \"Visualization in Cytoscape\"]\n  # edge statements\n  1 ->  2\n  2 -> 3\n  3 -> 4\n  3 -> 5\n  4 -> 6\n  5 -> 6\n  }\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="learning-and-starting-out" class="slide level2">
+<h2>Learning and starting out</h2>
+<ul>
+<li><p>https://devguide.ropensci.org/</p></li>
+<li><p>https://r-pkgs.org/</p></li>
+<li><p>https://carpentries-incubator.github.io/lesson-R-packaging/</p></li>
+</ul>
 </section>
 <section id="ropensci" class="slide level2">
 <h2>rOpenSci</h2>
@@ -448,40 +518,99 @@
 <img data-src="images/rOpenSci_overview.png" class="r-stretch"></section>
 <section id="ropensci-1" class="slide level2">
 <h2>rOpenSci</h2>
+<div style="font-size: 80%;">
 <ul>
-<li><p>Creating technical infrastructure in the form of carefully vetted, staff and community-contributed R software tools that lower barriers to working with scientific data sources on the web</p></li>
-<li><p>Making the right data, tools and best practices more discoverable</p></li>
-<li><p>Creating social infrastructure through a welcoming and diverse community</p></li>
-<li><p>Promoting advocacy for a culture of data sharing and reusable software</p></li>
-<li><p>Building capacity of software users and developers and fostering a sense of pride in their work</p></li>
+<li>Creating technical infrastructure in the form of carefully vetted, staff and community-contributed R software tools that lower barriers to working with scientific data sources on the web</li>
+<li>Making the right data, tools and best practices more discoverable</li>
+<li>Creating social infrastructure through a welcoming and diverse community</li>
+<li>Promoting advocacy for a culture of data sharing and reusable software</li>
+<li>Building capacity of software users and developers and fostering a sense of pride in their work</li>
 </ul>
-<p><a href="https://ropensci.org/">https://ropensci.org/</a></p>
-
-<img data-src="images/rOpenSci_icon_lettering_color.png" class="r-stretch"></section>
+<p><a href="https://ropensci.org/" class="uri">https://ropensci.org/</a></p>
+</div>
+<p><img data-src="images/rOpenSci_icon_lettering_color.png" style="width:60.0%"> ## Resources: rOpenSci and others</p>
+</section>
 <section id="package-creating-functions" class="slide level2">
 <h2>Package: Creating functions</h2>
 <ul>
 <li>Converting scripts to functions</li>
+<li>Naming functions
+<ul>
+<li>snake_case</li>
+<li>object_verb()</li>
+<li>existing names</li>
+</ul></li>
+<li>Simple programming
+<ul>
+<li>Loops</li>
+<li>Assigning variables</li>
+<li>Logical thinking</li>
+</ul></li>
 </ul>
 </section>
 <section id="package-creating-documentation" class="slide level2">
 <h2>Package: Creating documentation</h2>
 <ul>
-<li>Manual pages</li>
-<li>Wirti</li>
+<li><p>Manual pages</p></li>
+<li><p>Vignettes</p></li>
 </ul>
 </section>
+<section id="package-manual-pages-source" class="slide level2">
+<h2>Package: Manual pages source</h2>
+<p><img data-src="images/function_wuchswerte.png"> ## Package: Manual pages (online)</p>
+<p><img data-src="images/function_wuchswerte_manual.png"></p>
+</section>
+<section id="package-vignette-source" class="slide level2">
+<h2>Package: Vignette source</h2>
+
+<img data-src="images/vignette_cytoscape_source.png" class="r-stretch"></section>
+<section id="package-vignette-webpage" class="slide level2">
+<h2>Package: Vignette webpage</h2>
+
+<img data-src="images/vignette_cytoscape.png" class="r-stretch"></section>
 <section id="package-creating-tests" class="slide level2">
 <h2>Package: Creating tests</h2>
+<ul>
+<li>check input</li>
+<li>check results</li>
+<li>check functions</li>
+</ul>
+<h3 id="testthat-package">testthat package!</h3>
+</section>
+<section id="package-continous-integration" class="slide level2">
+<h2>Package: Continous integration</h2>
+<p>“Continuous integration automatically runs tests on software. In the case of rOpenSci, CI practically means that a set of tests will be automatically run via GitHub, every time that you make a commit or pull request to GitHub.”</p>
+<p>https://devguide.ropensci.org/pkg_ci.html</p>
+<ul>
+<li>usethis package!</li>
+<li>Github Actions</li>
+</ul>
 </section>
 <section id="package-review" class="slide level2">
 <h2>Package: Review</h2>
+<ul>
+<li>Github issue: https://github.com/ropensci/software-review/</li>
+<li>Developers test your package</li>
+<li>Feedback</li>
+<li>Improvement of code</li>
+<li>Improvement of documentation</li>
+<li>Open peer review</li>
+</ul>
 </section>
 <section id="package-dissemination" class="slide level2">
 <h2>Package: Dissemination</h2>
+<ul>
+<li>Source: https://github.com/ropensci/dendroNetwork/</li>
+<li>Documentation: https://docs.ropensci.org/dendroNetwork/</li>
+<li>CRAN: https://cran.r-project.org/package=dendroNetwork</li>
+<li>Blog: https://ropensci.org/blog/2024/06/06/from-scripts-to-package/</li>
+<li>Social media: Mastodon, LinkedIn, Facebook..</li>
+<li>Write paper (still to publish)</li>
+</ul>
 </section>
 <section id="conclusions-recommendations" class="slide level2">
 <h2>Conclusions + recommendations</h2>
+<h3 id="creating-a-package-is-a-challenge-but-fun">Creating a package is a challenge, but fun!</h3>
 <ul>
 <li>Be nice, and share and document your code!</li>
 <li>Develop functions not scripts.</li>
@@ -713,6 +842,48 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
