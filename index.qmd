@@ -323,4 +323,6 @@ Visser, RM. forthcoming (2025). Relating Roman Rings. An interdisciplinary study
 Visser, RM and Vorst, Y. 2022 Connecting Ships: Using Dendrochronological Network Analysis to Determine the Wood Provenance of Roman-Period River Barges Found in the Lower Rhine Region and Visualise Wood Use Patterns. International Journal of Wood Culture 3(1--3): 123--151. DOI: https://doi.org/10.1163/27723194-bja10014.
 
 rOpenSci in general
+
+Source of these slides: https://github.com/RonaldVisser/dendroNetwork_presentation_JCM_CAA
 :::
