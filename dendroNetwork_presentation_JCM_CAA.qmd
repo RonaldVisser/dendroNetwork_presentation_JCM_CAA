@@ -1,0 +1,172 @@
+---
+title: "Developing the R package dendroNetwork for dendro-archaeology: lessons learned"
+author: "Ronald M. Visser"
+format:
+  revealjs:
+    logo: images/logo_saxion_dendroNetwork.jpg
+    footer: "JCM CAA-NLFl CAA-DE: 2024-10-23"
+    smaller: true
+    css: logo.css
+
+title-slide-attributes: 
+  data-background-image: images/dendroNetwork_hexsticker.png
+  data-background-size: 15%
+  data-background-position: 2% 2%
+---
+
+## Content
+
+-   Open Science
+-   Research
+    -   Developing a new method
+        -   Problem: Wood provision unknown
+        -   Solution: Dendrochronological provenance patterns
+-   Package
+    -   ROpenSci
+    -   Creation
+    -   Review
+    -   Dissemination
+-   Conclusions + recommendations
+
+## Open Science
+
+::: columns
+::: {.column width="40%"}
+-   Open scientific knowledge
+-   Open science infrastructures
+-   Open engagement of societal actors
+-   Open dialogue with other knowledge systems
+
+::: {style="font-size: 40%;"}
+UNESCO. 2021. UNESCO Recommendation on Open Science. Paris: United Nations Educational, Scientific and Cultural Organization. DOI: https://doi.org/10.54677/MNMH8546.
+:::
+
+:::
+
+::: {.column width="60%"}
+
+![Open Science pillars](images/UNESCO-Open_science-pillars-en.png){width=90%}
+
+:::
+:::
+
+
+## Research
+
+### Research context: Roman wood provision
+
+- Many finds of wood from Roman period
+- Archaeological context known
+- Provenance of wood unknown
+
+### Main research question
+- How was the procurement of wood organised in the German provinces of the Roman empire during first four centuries AD? 
+
+## Dendrochronology
+
+::: columns
+::: {.column width="40%"}
+- Annual ring of wood around tree
+- Tree ring width depends on
+  - Soil
+  - (micro)Climate
+  - Local factors
+  - Disturbance
+- Growth season: spring and summer
+:::
+::: {.column width="60%"}
+![](images/treering_formation.png)
+:::
+:::
+
+## Dendroprovenance
+
+::: columns
+::: {.column width="60%"}
+
+Provenance of wood based on comparison tree-ring curves with calenders
+
+### Problems
+- Often based on single measure
+- Comparison individual curves
+- Complex with large datasets
+- Clustering problems common interval
+
+### Solution: network analyses
+:::
+::: {.column width="40%"}
+![](images/Network_means_4.png)
+:::
+:::
+
+
+## Dendrochronological networks
+
+- Nodes: Site chronologies (tree ring data) 
+- Edges: statistical similarity
+  - Correlation (r ≥  0,5)
+  - Overlapping tree rings (n ≥ 50)
+  - SGC (% (Improved statistic, formerly Gleichläufigkeit: ≥ 70%)
+  - Probability of exceedence (p, <= 0.0001)
+
+![](images/network_example.png)
+
+## Provenance in network
+
+
+
+## rOpenSci
+
+![](images/rOpenSci_overview.png)
+
+## rOpenSci
+
+- Creating technical infrastructure in the form of carefully vetted, staff and community-contributed R software tools that lower barriers to working with scientific data sources on the web
+
+- Making the right data, tools and best practices more discoverable
+
+- Creating social infrastructure through a welcoming and diverse community
+
+- Promoting advocacy for a culture of data sharing and reusable software
+
+- Building capacity of software users and developers and fostering a sense of pride in their work
+
+[https://ropensci.org/](https://ropensci.org/)
+
+![](images/rOpenSci_icon_lettering_color.png)
+
+## Package: Creating functions
+
+- Converting scripts to functions
+
+## Package: Creating documentation
+
+- Manual pages
+- Wirti
+
+## Package: Creating tests
+
+## Package: Review
+
+## Package: Dissemination
+
+## Conclusions + recommendations
+
+- Be nice, and share and document your code!
+- Develop functions not scripts.
+- Develop a package from the start, especially when devising a new method(ology).
+- Read the documentation (or: RTFM)
+- Submit to rOpenSci and enjoy!
+
+
+## References
+
+Visser, RM. 2021a Dendrochronological Provenance Patterns. Network Analysis of Tree-Ring Material Reveals Spatial and Economic Relations of Roman Timber in the Continental North-Western Provinces. Journal of Computer Applications in Archaeology 4(1): 230–253. DOI: https://doi.org/10.5334/jcaa.79.
+
+Visser, RM. 2021b On the similarity of tree-ring patterns: Assessing the influence of semi-synchronous growth changes on the Gleichläufigkeitskoeffizient for big tree-ring data sets. Archaeometry 63(1): 204–215. DOI: https://doi.org/10.1111/arcm.12600.
+
+Visser, RM. 2024 dendroNetwork: a R-package to create dendrochronological networks. DOI: https://doi.org/10.5281/zenodo.10636310.
+
+Visser, RM. forthcoming. Relating Roman Rings. An interdisciplinary study using archaeology, data science and tree rings to understand timber provision in the German Provinces of the Roman Empire. PhD Thesis. Amsterdam: Vrije Universiteit.
+
+Visser, RM and Vorst, Y. 2022 Connecting Ships: Using Dendrochronological Network Analysis to Determine the Wood Provenance of Roman-Period River Barges Found in the Lower Rhine Region and Visualise Wood Use Patterns. International Journal of Wood Culture 3(1–3): 123–151. DOI: https://doi.org/10.1163/27723194-bja10014.
