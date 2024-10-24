@@ -253,7 +253,9 @@ digraph {
 
 ## Package: Manual pages source
 
-![](images/function_wuchswerte.png) \## Package: Manual pages (online)
+![](images/function_wuchswerte.png) 
+
+## Package: Manual pages (online)
 
 ![](images/function_wuchswerte_manual.png)
 
