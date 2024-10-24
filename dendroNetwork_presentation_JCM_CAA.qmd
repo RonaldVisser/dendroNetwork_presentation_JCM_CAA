@@ -312,12 +312,19 @@ https://devguide.ropensci.org/pkg_ci.html
 
 ## References
 
+::: {style="font-size: 70%;"}
+
 Visser, RM. 2021a Dendrochronological Provenance Patterns. Network Analysis of Tree-Ring Material Reveals Spatial and Economic Relations of Roman Timber in the Continental North-Western Provinces. Journal of Computer Applications in Archaeology 4(1): 230--253. DOI: https://doi.org/10.5334/jcaa.79.
 
 Visser, RM. 2021b On the similarity of tree-ring patterns: Assessing the influence of semi-synchronous growth changes on the Gleichläufigkeitskoeffizient for big tree-ring data sets. Archaeometry 63(1): 204--215. DOI: https://doi.org/10.1111/arcm.12600.
 
 Visser, RM. 2024 dendroNetwork: a R-package to create dendrochronological networks. DOI: https://doi.org/10.5281/zenodo.10636310.
 
-Visser, RM. forthcoming. Relating Roman Rings. An interdisciplinary study using archaeology, data science and tree rings to understand timber provision in the German Provinces of the Roman Empire. PhD Thesis. Amsterdam: Vrije Universiteit.
+Visser, RM. forthcoming (2025). Relating Roman Rings. An interdisciplinary study using archaeology, data science and tree rings to understand timber provision in the German Provinces of the Roman Empire. PhD Thesis. Amsterdam: Vrije Universiteit.
 
 Visser, RM and Vorst, Y. 2022 Connecting Ships: Using Dendrochronological Network Analysis to Determine the Wood Provenance of Roman-Period River Barges Found in the Lower Rhine Region and Visualise Wood Use Patterns. International Journal of Wood Culture 3(1--3): 123--151. DOI: https://doi.org/10.1163/27723194-bja10014.
+
+rOpenSci in general
+
+:::
+

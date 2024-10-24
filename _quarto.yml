@@ -1,5 +1,6 @@
 project:
   title: "dendroNetwork_presentation_JCM_CAA"
+  output-dir: docs
 
 editor: visual
 
