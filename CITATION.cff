@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this presentationo, please cite it as below."
+authors:
+  - family-names: Visser
+    given-names: Ronald M.
+    orcid: "https://orcid.org/0000-0001-6966-1729"
+title: "Developing the R package dendroNetwork for dendro-archaeology: lessons learned"
+date-released: 2024-10-24
+url: "https://github.com/RonaldVisser/dendroNetwork_presentation_JCM_CAA"
