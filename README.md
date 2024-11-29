@@ -1,6 +1,7 @@
 # Developing the R package dendroNetwork for dendro-archaeology: lessons learned
 
-Ronald Visser (Saxion University of Applied Sciences)\
+Ronald Visser (Saxion University of Applied Sciences)
+[![DOI](https://zenodo.org/badge/877737511.svg)](https://doi.org/10.5281/zenodo.14246175)
 
 Presentation given during the Joint Chapter Meeting CAA-NLFl and CAA-DE in Groningen on 24th of October 2024
 
